@@ -32,7 +32,7 @@ const Weather = {
     },
 
     /**
-     * 
+     * saves weather JSON in local storage
      * @param {JSON} weatherData weather data got by API as JSON 
      * @param {string} type current or forecast depending on the type of weather to be saved
      */
