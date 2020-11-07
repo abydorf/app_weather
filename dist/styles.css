@@ -450,8 +450,7 @@ form {
   clear: both; }
 
 #navigation {
-  order: 1;
-  overflow: hidden; }
+  order: 1; }
   #navigation ul {
     display: flex;
     list-style: none; }
