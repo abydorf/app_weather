@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Test</title>
+	<link rel='stylesheet' href='dist/styles_min.css' />
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+	<nav id="navigation">
+		<ul role="tablist" aria-label="Tabs">
+			<li>
+				<button class="btn-nav" id="btn-favorites" aria-controls="favorites">
+					<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 10.5687L18.037 15.7393L19.2696 22.9746L13.0646 19.6034L6.9089 23.0731L8.037 15.8193L3 10.7286L9.90221 9.61593L12.9448 3L16.0825 9.56668L23 10.5687Z" stroke="#ffffff" stroke-width="2"/></svg>
+				</button>
+			</li>
+			<li>
+				<button class="btn-nav" id="btn-home" aria-controls="home">
+					<svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 24.0001H21V11.1668L11 2L1 11.1668L1 24.0001Z" stroke="#ffffff" stroke-width="2"/></svg>
+				</button>
+			</li>
+			<li>
+				<button class="btn-nav" id="btn-search" aria-controls="search">
+					<svg width="22" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.38761 1.00066C5.70107 1.02552 4.09063 1.70695 2.8982 2.8999C1.68279 4.1156 1 5.7641 1 7.48315C0.999997 9.20221 1.68278 10.851 2.89818 12.0667C4.11387 13.2821 5.76255 13.9649 7.48162 13.9649C9.20069 13.9649 10.8494 13.2821 12.0651 12.0667C13.2805 10.851 13.9633 9.20223 13.9633 7.48315C13.9633 5.76408 13.2805 4.1156 12.065 2.8999C11.452 2.28663 10.7222 1.80257 9.91877 1.47637C9.11534 1.15018 8.25464 0.988287 7.38761 1.00066V1.00066ZM12.122 12.1718L21 21.0541L12.122 12.1718Z" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel"/></svg>
+				</button>
+			</li>
+		</ul>
+	</nav>
+	<main id="content">
+		<section id="favorites" role="tabpanel" aria-labelledby="btn-favorites">
+			<div class="container">
+				<div id="wthr-favorites"></div>
+			</div>
+		</section>
+		<section id="home" role="tabpanel" aria-labelledby="btn-home" class="active">
+			<div class="container">
+				<div id="wthr-city"></div>
+				<div id="wthr-time"></div>
+				<div id="wthr-current"></div>
+				<div id="wthr-forecast"></div>
+			</div>
+		</section>
+		<section id="search" role="tabpanel" aria-labelledby="btn-search">
+			<div class="container">
+				<form id="search-form">
+					<div class="form__fields">
+						<input type="text" id="search-form-input">
+						<input type="submit" value="Search">
+					</div>
+				</form>
+				<div id="wthr-result"></div>
+			</div>
+		</section>
+	</main>
+
+	<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+	"name": "abydorf-weather",
+	"author": "",
+	"private": true,
+	"version": "0.0.1",
+	"main": "app.js",
+	"scripts": {
+		"debug": "netlify dev --inspect",
+		"sass:build": "node-sass-chokidar --source-map true src/ -o dist",
+		"sass:watch": "chokidar 'src/*.scss' -c 'npm run sass:build'",
+		"dev": "npm-run-all -p sass:*",
+		"dist": "minify dist/styles.css > dist/styles_min.css"
+	},
+	"dependencies": {
+		"chokidar-cli": "^2.1.0",
+		"dotenv": "^8.2.0",
+		"minify": "^5.1.0",
+		"node-fetch": "^2.6.1",
+		"node-sass-chokidar": "^1.4.0",
+		"npm-run-all": "^4.1.5"
+	},
+	"devDependencies": {}
+}

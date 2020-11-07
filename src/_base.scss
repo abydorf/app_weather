@@ -1,0 +1,74 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: $base-font;
+	background: #2a2a2a;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.6;
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form,
+pre,
+blockquote,
+dl,
+figure,
+table {
+	margin: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	li {
+		list-style-position: inside;
+	}
+	ul {
+		margin-left: 0rem;
+	}
+}
+
+.button,
+button[type="button"],
+button[type="reset"],
+button[type="submit"],
+button {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	height: 100%;
+    line-height: 1;
+	padding: 1rem 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+/*
+.page {
+	@include media("≥tablet") {
+		background: green;
+	}
+	@include media("≥desktop") {
+		background: red;
+	}
+}
+*/

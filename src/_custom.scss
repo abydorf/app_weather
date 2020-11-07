@@ -1,0 +1,141 @@
+#navigation {
+    order: 1;
+    overflow: hidden;
+	ul {		
+		display: flex;
+		list-style: none;
+		li {
+			flex-grow: 1;
+			height: 7.5rem;
+			line-height: 7.5rem;
+			text-align: center;
+			svg {
+				pointer-events: none;
+				vertical-align: middle;
+            }
+            .btn-nav {
+                background: #1e1e1e;
+                border-top: 0.1rem solid #4d4d4d;
+                &.active {
+                    background: #2a2a2a;
+                    border: none;
+                }
+            }
+		}
+	}
+}
+
+#content {
+	flex: 1;
+    order: 0;
+    padding-top: 1rem;
+    #favorites,
+    #search,
+    #home {
+        display: none;
+    }
+}
+
+#wthr-city,
+#wthr-time,
+#wthr-current {
+    text-align: center;
+}
+
+#wthr-city {
+    font: normal 3.6rem/3.6rem $base-font-bold;
+    margin-top: 10rem;
+}
+
+#wthr-time,
+#wthr-current {
+    margin-bottom: 3rem;
+}
+
+#wthr-current {
+    display: flex;
+    font-family:$base-font-bold;
+    font-size: 3.2rem;
+    justify-content: center;
+    svg {
+        fill: #fff;
+        margin-right: 1rem;
+        position: relative;
+        top: -2px;
+        width: 50px;
+    }
+}
+
+#wthr-forecast {
+    ul {
+        list-style: none;
+        width: 100%;
+        li {
+            display: flex;
+            .day,
+            .condition,
+            .degree {
+                width: 33%;
+            }
+            .day {
+                padding-left: 2rem;
+            }
+            .condition {
+                text-align: center;
+            }
+            .degree {
+                padding-right: 2rem;
+                text-align: right;
+            }
+            svg {
+                fill: #fff;
+                width: 25px;
+            }
+        }
+    }
+}
+
+#favorites {
+    #wthr-favorites {
+        ul {
+            list-style: none;
+            li {
+                border: 0.1rem solid #4d4d4d;
+                display: flex;
+                margin-bottom: 2rem;
+                * {
+                    padding: 2rem;
+                }
+                .city {
+                    pointer-events: none;
+                }
+                .delete {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+#search {
+    #search-form {
+        margin-top: 10rem;
+        input[type='submit'] {
+            background: #4d4d4d;
+            border: 0;
+            box-shadow: unset;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    #wthr-result {
+        text-align: center;
+        div {
+            border: 0.1rem solid #4d4d4d;
+            padding: 2rem;
+        }
+        button {
+            background: #4d4d4d;
+        }
+    }
+}
