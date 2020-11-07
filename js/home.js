@@ -9,6 +9,7 @@ const Home = {
         if(currentCityObject === '') {
             // no cities saved, nothing to show, go to search
             document.getElementById('btn-search').click()
+            return
         }
         render(currentCityObject.name, document.querySelector('#wthr-city'))
         renderLoadingIndicator(document.querySelector('#wthr-current'))
