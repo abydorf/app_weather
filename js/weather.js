@@ -65,7 +65,7 @@ const Weather = {
                 }
             })
             forecastHTML += '</li>'
-        })    
+        })
         forecastHTML += '</ul>'
         return forecastHTML
     },
