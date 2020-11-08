@@ -37,12 +37,10 @@ const Home = {
                 const TIME_SAVED = savedWeather.time
                 const TIME_CURRENT = new Date().getTime()
                 const THREE_HOURS = 3600000 * 3
-                if((TIME_SAVED - TIME_CURRENT) > THREE_HOURS) {
+                if((TIME_CURRENT - TIME_SAVED) > THREE_HOURS) {
                     renderSavedWeather = false
-                    console.log('renderSavedWeather == false')
                 } else {
                     renderSavedWeather = true
-                    console.log('renderSavedWeather == true')
                 }
             }
         }
