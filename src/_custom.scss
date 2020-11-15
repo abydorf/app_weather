@@ -39,6 +39,7 @@
 #wthr-time,
 #wthr-current {
     text-align: center;
+    text-shadow: rgba(0,0,0,0.2) 2px 2px
 }
 
 #wthr-city {
@@ -54,20 +55,22 @@
 #wthr-current {
     display: flex;
     font-family:$base-font-bold;
-    font-size: 3.2rem;
+    font-size: 6rem;
     justify-content: center;
     svg {
         fill: #fff;
-        margin-right: 1rem;
+        filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .4));
+        margin-right: 3rem;
         position: relative;
         top: -2px;
-        width: 50px;
+        width: 80px;
     }
 }
 
 #wthr-forecast {
     ul {
         list-style: none;
+        text-shadow: rgba(0,0,0,0.2) 2px 2px;
         width: 100%;
         li {
             display: flex;
@@ -88,6 +91,7 @@
             }
             svg {
                 fill: #fff;
+                filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .4));
                 width: 25px;
             }
         }

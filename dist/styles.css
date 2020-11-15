@@ -481,7 +481,8 @@ form {
 #wthr-city,
 #wthr-time,
 #wthr-current {
-  text-align: center; }
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px; }
 
 #wthr-city {
   font: normal 3.6rem/3.6rem "noto-sans-bold", arial, sans-serif;
@@ -494,17 +495,19 @@ form {
 #wthr-current {
   display: flex;
   font-family: "noto-sans-bold", arial, sans-serif;
-  font-size: 3.2rem;
+  font-size: 6rem;
   justify-content: center; }
   #wthr-current svg {
     fill: #fff;
-    margin-right: 1rem;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+    margin-right: 3rem;
     position: relative;
     top: -2px;
-    width: 50px; }
+    width: 80px; }
 
 #wthr-forecast ul {
   list-style: none;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 2px;
   width: 100%; }
   #wthr-forecast ul li {
     display: flex; }
@@ -521,6 +524,7 @@ form {
       text-align: right; }
     #wthr-forecast ul li svg {
       fill: #fff;
+      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
       width: 25px; }
 
 #favorites #wthr-favorites ul {
