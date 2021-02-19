@@ -500,6 +500,7 @@ form {
   #wthr-current svg {
     fill: #fff;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+    margin-right: 2rem;
     position: relative;
     top: -2px;
     width: 80px; }
