@@ -64,6 +64,9 @@
         position: relative;
         top: -2px;
         width: 80px;
+        &.loading-indicator {
+            margin-right: 0;
+        }
     }
 }
 

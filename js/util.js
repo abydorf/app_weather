@@ -12,7 +12,7 @@ function render(template, node) {
  * @param {object } node HTML element as object to render HTML into
  */
 function renderLoadingIndicator(node) {
-    node.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100" style="height:30px;width:30px"><circle cx="50" cy="50" r="35" fill="none" stroke="#d1d1d1" stroke-dasharray="164.93361431 56.97787144" stroke-width="5"><animateTransform attributeName="transform" dur="1s" keyTimes="0;1" repeatCount="indefinite" type="rotate" values="0 50 50;360 50 50"/></circle></svg>'
+    node.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 100 100" class="loading-indicator" style="height:30px;width:30px"><circle cx="50" cy="50" r="35" fill="none" stroke="#d1d1d1" stroke-dasharray="164.93361431 56.97787144" stroke-width="5"><animateTransform attributeName="transform" dur="1s" keyTimes="0;1" repeatCount="indefinite" type="rotate" values="0 50 50;360 50 50"/></circle></svg>'
 }
 
 /**

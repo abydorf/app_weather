@@ -504,6 +504,8 @@ form {
     position: relative;
     top: -2px;
     width: 80px; }
+    #wthr-current svg.loading-indicator {
+      margin-right: 0; }
 
 #wthr-forecast ul {
   list-style: none;
